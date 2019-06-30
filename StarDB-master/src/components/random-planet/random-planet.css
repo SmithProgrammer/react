@@ -1,0 +1,92 @@
+.random-planet-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.random-planet-img {
+	display: block;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	min-width: 400px;
+	min-height: 400px;
+}
+
+.random-planet-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: rgba(63, 63, 63, 0.7);
+	border: 1px solid #999999;
+	border-radius: 10px;
+	list-style: none;
+}
+
+.random-planet-list__item {
+	color: #d0d0d0;
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #5a5a5a;
+}
+
+.random-planet-list__item:hover {
+	background-color: #666666;
+}
+
+.random-planet-list__item:first-child {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px; 
+}
+
+.update-planet {
+	width: 120px;
+	white-space: nowrap;
+	padding: 5px;
+	border-radius: 10px;
+	height: 30px;
+	color: #d0d0d0;
+	border: none;
+	margin-top: auto;
+	margin-left: 10px;
+	margin-right: 30px;
+	background-color: #1f83ff;
+	text-shadow: 0px 0px 25px #1f83ff;
+	transition: 0.3s;
+}
+
+.update-planet:hover {
+	box-shadow: 0px 0px 15px 3px #1f83ff;
+}
+
+.update-planet:active {
+	box-shadow: 0px 0px 15px 20px #1f83ff;
+	background-color: #d0d0d0;
+	color: #1f83ff;
+}
+
+
+
+
+/*Adaptive*/
+@media ( max-width: 1000px ) {
+	.update-planet {
+		margin: auto auto;
+		margin-top: 30px;
+	}
+	.random-planet-wrapper {
+		flex-direction: column;
+	}
+	.random-planet-img {
+		margin: 0 auto;
+	}
+	.random-planet-list {
+		margin-top: 30px;
+	}
+}
+
+@media ( max-width: 440px ) {
+	.random-planet-img {
+		width: 200px;
+		height: 200px;
+	}
+}

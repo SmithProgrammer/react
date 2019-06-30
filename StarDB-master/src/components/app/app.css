@@ -1,0 +1,62 @@
+ * {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+    min-width: 300px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	line-height: 135%;
+	background-color: #000;
+	background: url(https://i.gifer.com/hmx.gif) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+#root {
+}
+
+.app-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/*Adaptive*/
+@media ( max-width: 1200px ) {
+	body {
+		background-color: #000;
+	}
+	.app-wrapper {
+		max-width: 990px;
+		margin: 0 auto;
+	}
+}
+
+@media ( max-width: 1000px ) {
+	.app-wrapper {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+}
+
+@media ( max-width: 780px ) {
+	.app-wrapper {
+		max-width: 100%;
+		margin: 0 10px;
+	}
+}
